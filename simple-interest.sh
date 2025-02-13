@@ -1,11 +1,19 @@
 #!/bin/bash
 
-# Script para ejecutar el cálculo de interés simple en Python
-# Mostrar un mensaje al inicio
+#m, monto
+#t, tiempo
+#i, interes anual
+
+echo "Ingrese el monto"
+read m
+echo "Introduzca la tasa de interés por año"
+read t
+echo "Ingresa el periodo de tiempo en años"
+read i
+
 echo "Iniciando el cálculo del interés simple..."
 
-# Ejecutar el script de Python
-python3 calcular_interes_simple.py
-
 # Mensaje al final
+d=$(expr $m\* $t \* $i )
 echo "Cálculo completado."
+echo $d
